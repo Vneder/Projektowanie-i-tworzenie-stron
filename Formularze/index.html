@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularze</title>
+</head>
+
+<body>
+    <form>
+        <p>Wzrost:</p>
+        <input type="number" name="wzrost" min="120" max="210" step="0.5">
+        <p>Tekst podpowiedzi</p>
+        <input type="text" placeholder="Tekst podpowiedzi">
+        <p>Kropki zamiast tekstu</p>
+        <input type="password">
+        <p>Pole do resetu</p>
+        <input type="reset" value="Reset">
+        <br>
+        <br>
+        <fieldset>
+            <legend>Elementy radio:</legend>
+            <input type="radio" name="elem" id="1">
+            <input type="radio" name="elem" id="2">
+            <input type="radio" name="elem" id="3">
+            <input type="radio" name="elem" id="4">
+            <input type="radio" name="elem" id="5">
+            <input type="radio" name="elem" id="6">
+            <input type="radio" name="elem" id="7">
+            <input type="radio" name="elem" id="8">
+            <input type="radio" name="elem" id="9">
+        </fieldset>
+        <p>
+            Lista wielokrotnego wyboru kolrów:
+        </p>
+        <select id="colors" name="colors" multiple>
+            <option value="red">Czerwony</option>
+            <option value="green">Zielony</option>
+            <option value="blue">Niebieski</option>
+            <option value="yellow">Żółty</option>
+            <option value="black">Czarny</option>
+            <option value="white">Biały</option>
+        </select>
+        <p>
+            Pole do max 200 znaków:
+        </p>
+        <textarea maxlength="200" cols="50" rows="6"></textarea>
+        <p>
+            Wstepnie zaznaczone itd:
+        </p>
+        <input type="checkbox" id="" name="" value="" checked>
+        Opcja 1
+        <input type="checkbox" id="" name="" value="">
+        Opcja 2
+        <input type="checkbox" id="" name="" value="" checked>
+        Opcja 3
+        <input type="checkbox" id="" name="" value="">
+        Opcja 4
+        <input type="checkbox" id="" name="" value="" checked>
+        Opcja 5
+        <p>
+            Pole daty:
+        </p>
+        <input type="date" name="data" id="">
+        <p>
+            Pole czasu:
+        </p>
+        <input type="time" name="czas" id="">
+        <p>
+            Pole progress bar:
+        </p>
+        <progress id="bar" value="80" max="100"></progress>
+
+        <form>
+            <fieldset>
+                <legend>Formularz wielu elem z zaznaczonymi i wyłączonymi:</legend>
+                <input type="checkbox" id="" name="" value="" checked>
+                Opcja 1
+                <br>
+                <input type="checkbox" id="" name="" value="" disabled>
+                Opcja 2 (Niedostępna)
+                <br>
+                <input type="checkbox" id="" name="" value="">
+                Opcja 3
+                <br>
+                <input type="checkbox" id="" name="" value="" checked>
+                Opcja 4
+                <br><br>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+        <p>
+            Pole do temperatury:
+        </p>
+        <meter id="temperature" value="21" min="15" max="30"></meter>
+        <p>
+            Pole do wprowadzania linków:
+        </p>
+        <input type="url" name="Linki" id="" required>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
