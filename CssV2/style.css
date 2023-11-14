@@ -1,0 +1,17 @@
+div {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    width: 40vw;
+    min-height: 40vh;
+    margin: 30px auto;
+}
+
+.zad9 {
+    background: rgb(0, 59, 255);
+    background: linear-gradient(90deg, rgba(0, 59, 255, 1) 0%, rgba(20, 255, 0, 1) 100%);
+}
+
+.dotted {
+    border: 2px dotted blue;
+}
