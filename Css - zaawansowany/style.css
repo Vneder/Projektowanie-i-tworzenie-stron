@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f6fa;
+    text-align: center;
+}
+
+div {
+    padding: 40px;
+    margin: auto;
+}
+
+.zad {
+    border: 1px solid black;
+}
+
+/* Zad 1 */
+
+.rotateResponsiveItem {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: deepskyblue;
+    width: 300px;
+    height: 300px;
+}
+
+@media only screen and (min-width: 200px) {
+    .rotateResponsiveItem {
+        transform: rotate(110deg);
+    }
+}
+
+@media only screen and (min-width: 400px) {
+    .rotateResponsiveItem {
+        transform: rotate(90deg);
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .rotateResponsiveItem {
+        transform: rotate(70deg);
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .rotateResponsiveItem {
+        transform: rotate(50deg);
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .rotateResponsiveItem {
+        transform: rotate(30deg);
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .rotateResponsiveItem {
+        transform: rotate(10deg);
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .rotateResponsiveItem {
+        transform: rotate(0deg);
+    }
+}
+
+/* Zad 2 */
+
+.rotateItem {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 300px;
+    height: 300px;
+    background-color: #39db34;
+    animation: rotateAnimation 10s linear infinite;
+}
+
+@keyframes rotateAnimation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Zad 3 */
+
+.skewItem {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 300px;
+    height: 300px;
+    background-color: #e74c3c;
+    animation: skewAnimation 2s linear infinite alternate;
+}
+
+@keyframes skewAnimation {
+    from {
+        transform: skewX(0deg);
+    }
+
+    to {
+        transform: skewX(30deg);
+    }
+}
+
+/* Zad4 */
+
+.allAnimationItem {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 300px;
+    height: 300px;
+    background-color: #e4e73c;
+}
+
+@media only screen and (min-width: 400px) {
+    .allAnimationItem {
+        animation: skewAnimation 5s linear infinite alternate;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .allAnimationItem {
+        animation: rotateAnimation 10s linear infinite;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .allAnimationItem {
+        animation: transformAnimationX 5s linear infinite;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .allAnimationItem {
+        animation: transformAnimationY 5s linear infinite;
+    }
+}
+
+@keyframes transformAnimationX {
+    from {
+        transform: scaleX(1);
+    }
+
+    to {
+        transform: scaleX(-1);
+    }
+}
+
+@keyframes transformAnimationY {
+    from {
+        transform: scaleY(1);
+    }
+
+    to {
+        transform: scaleY(-1);
+    }
+}
